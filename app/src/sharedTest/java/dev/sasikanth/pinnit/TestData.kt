@@ -1,6 +1,7 @@
 package dev.sasikanth.pinnit
 
 import dev.sasikanth.pinnit.data.PinnitNotification
+import dev.sasikanth.pinnit.data.Schedule
 import java.time.Instant
 import java.util.UUID
 
@@ -12,7 +13,8 @@ object TestData {
     isPinned: Boolean = false,
     createdAt: Instant = Instant.now(),
     updatedAt: Instant = Instant.now(),
-    deletedAt: Instant? = null
+    deletedAt: Instant? = null,
+    schedule: Schedule? = null
   ): PinnitNotification {
     return PinnitNotification(
       uuid = uuid,
@@ -21,7 +23,8 @@ object TestData {
       isPinned = isPinned,
       createdAt = createdAt,
       updatedAt = updatedAt,
-      deletedAt = deletedAt
+      deletedAt = deletedAt,
+      schedule = schedule
     )
   }
 }

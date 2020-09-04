@@ -8,11 +8,12 @@ import dev.sasikanth.pinnit.utils.room.UuidRoomTypeConverter
 
 @Database(
   entities = [PinnitNotification::class],
-  version = 1
+  version = 2
 )
 @TypeConverters(
   UuidRoomTypeConverter::class,
-  InstantRoomTypeConverter::class
+  InstantRoomTypeConverter::class,
+  ScheduleTypeConverter::class
 )
 abstract class AppDatabase : RoomDatabase() {
   abstract fun notificationDao(): PinnitNotification.RoomDao
