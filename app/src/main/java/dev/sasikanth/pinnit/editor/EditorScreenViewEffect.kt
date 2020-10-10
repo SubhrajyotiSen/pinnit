@@ -13,3 +13,5 @@ object ShowConfirmExitEditorDialog : EditorScreenViewEffect()
 object ShowConfirmDeleteDialog : EditorScreenViewEffect()
 
 object ShowDatePickerViewEffect : EditorScreenViewEffect()
+
+object ShowTimePickerViewEffect : EditorScreenViewEffect()

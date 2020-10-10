@@ -224,4 +224,14 @@ class EditorScreenEffectHandlerTest {
     consumer.assertValues()
     viewEffectConsumer.assertValues(ShowDatePickerViewEffect)
   }
+
+  @Test
+  fun `when show time picker effect is received, then show time picker`() {
+    // when
+    connection.accept(ShowTimePicker)
+
+    // then
+    consumer.assertValues()
+    viewEffectConsumer.assertValues(ShowTimePickerViewEffect)
+  }
 }
