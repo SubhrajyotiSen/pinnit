@@ -37,6 +37,8 @@ class EditorScreenEffectHandler @AssistedInject constructor(
       ShowConfirmDelete -> viewEffectConsumer.accept(ShowConfirmDeleteDialog)
 
       is DeleteNotification -> deleteNotification(effect)
+
+      ShowDatePicker -> viewEffectConsumer.accept(ShowDatePickerViewEffect)
     }
   }
 

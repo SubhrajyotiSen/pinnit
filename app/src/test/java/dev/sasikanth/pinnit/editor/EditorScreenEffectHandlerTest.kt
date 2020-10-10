@@ -214,4 +214,14 @@ class EditorScreenEffectHandlerTest {
     consumer.assertValues()
     viewEffectConsumer.assertValues(SetTitle(null), SetContent(notificationContent))
   }
+
+  @Test
+  fun `when show date picker effect is received, then show date picker`() {
+    // when
+    connection.accept(ShowDatePicker)
+
+    // then
+    consumer.assertValues()
+    viewEffectConsumer.assertValues(ShowDatePickerViewEffect)
+  }
 }

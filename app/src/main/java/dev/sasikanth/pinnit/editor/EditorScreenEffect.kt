@@ -25,3 +25,5 @@ object ShowConfirmExitEditor : EditorScreenEffect()
 data class DeleteNotification(val notification: PinnitNotification) : EditorScreenEffect()
 
 object ShowConfirmDelete : EditorScreenEffect()
+
+object ShowDatePicker : EditorScreenEffect()
